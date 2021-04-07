@@ -17,16 +17,19 @@
   background-repeat: no-repeat;
 
   &--compound {
-    background-image: url(../img/compound.svg);
+    background-image: url("../img/compound.svg");
   }
+
   &--form {
-    background-image: url(../img/form.svg);
+    background-image: url("../img/form.svg");
   }
+
   &--nutrition {
-    background-image: url(../img/nutrition.svg);
+    background-image: url("../img/nutrition.svg");
   }
+
   &--time {
-    background-image: url(../img/time.svg);
+    background-image: url("../img/time.svg");
   }
 }
 

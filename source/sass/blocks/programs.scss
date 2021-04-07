@@ -9,11 +9,11 @@
   background-repeat: no-repeat;
 
   &--slim {
-    background-image: url(../img/cat_back-slim.svg);
+    background-image: url("../img/cat_back-slim.svg");
     margin-bottom: 20px;
   }
 
   &--pro {
-    background-image: url(../img/cat_back-pro.svg);
+    background-image: url("../img/cat_back-pro.svg");
   }
 }
