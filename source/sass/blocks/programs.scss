@@ -1,0 +1,19 @@
+.programs {
+  padding-bottom: 27px;
+}
+
+.programs__item {
+  padding-bottom: 18px;
+
+  background-color: $lightgrey;
+  background-repeat: no-repeat;
+
+  &--slim {
+    background-image: url("../img/cat_back-slim.svg");
+    margin-bottom: 20px;
+  }
+
+  &--pro {
+    background-image: url("../img/cat_back-pro.svg");
+  }
+}

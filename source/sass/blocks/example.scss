@@ -1,0 +1,24 @@
+.example {
+  background-color: $darkgrey;
+  padding-bottom: 25px;
+}
+
+.example__title {
+  padding: 27px 0 33px 0;
+
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.example__description {
+  font-family: $text-font;
+  font-size: $small;
+  line-height: 18px;
+}
+
+.example__cost {
+  font-size: $small;
+  line-height: 20px;
+  text-transform: uppercase;
+}
