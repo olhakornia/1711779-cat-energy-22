@@ -1,0 +1,36 @@
+.form__fieldset {
+  margin-bottom: 25px;
+}
+
+.form__field {
+  padding-bottom: 13px;
+}
+
+.form__title {
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__label,
+.form__input {
+  font-size: 16px;
+  line-height: 18px;
+  color: $form-darkgrey1;
+  text-transform: uppercase;
+}
+
+.form__radio {
+  .form__label,
+  .form__input {
+    color: $form-darkgrey2;
+  }
+}
+
+.form__checkbox {
+  .form__label,
+  .form__input {
+    color: $black;
+  }
+}
+
