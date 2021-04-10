@@ -11,6 +11,10 @@
   line-height: 40px;
 }
 
+.features__list {
+  @include ul-style;
+}
+
 .features__item {
   height: 60px;
   margin-bottom: 20px;
@@ -35,6 +39,7 @@
 
 .features__description {
   padding-left: 80px;
+  margin: 0;
 
   font-family: $text-font;
   font-size: $small;

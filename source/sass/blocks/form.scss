@@ -20,16 +20,14 @@
   text-transform: uppercase;
 }
 
-.form__radio {
-  .form__label,
-  .form__input {
-    color: $form-darkgrey2;
-  }
+.form__radio .form__label {
+  color: $form-darkgrey2;
 }
 
-.form__checkbox {
-  .form__label,
-  .form__input {
-    color: $black;
-  }
+.form__checkbox .form__label {
+  color: $black;
+}
+
+.form__legend {
+  @include text-style;
 }

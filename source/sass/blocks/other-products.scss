@@ -1,0 +1,51 @@
+.other-products__title {
+  @include text-style;
+  padding-bottom: 49px;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.other-products__list {
+  @include ul-style;
+}
+
+.other-products__item {
+  margin-bottom: 30px;
+}
+
+.other-products__name {
+  @include text-style;
+  font-size: 16px;
+  line-height: 1;
+  color: $form-darkgrey1;
+  text-transform: uppercase;
+}
+
+.other-products__description {
+  margin: 15px 0;
+}
+
+.other-products__text {
+  font-family: $text-font;
+  font-size: $small;
+  line-height: 1;
+  color: $form-darkgrey2;
+}
+
+.other-products__aside {
+  width: 280px;
+  height: 290px;
+
+  background-color: $green;
+  background-image: url("../../source/img/gift-photo-mobile.png");
+}
+
+.other-products__aside-text {
+  @include a-style;
+  font-family: $text-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+}

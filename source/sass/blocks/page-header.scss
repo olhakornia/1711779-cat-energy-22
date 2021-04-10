@@ -1,5 +1,10 @@
-.page-header__nav {
-  &--item a {
+.page-header__list {
+  @include ul-style;
+}
+
+.page-header__item {
+  a {
+    @include a-style;
     font-size: 20px;
     line-height: 1;
     font-weight: 500;
