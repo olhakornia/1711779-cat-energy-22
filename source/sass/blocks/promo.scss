@@ -22,7 +22,7 @@
 }
 
 .promo__text {
-  padding: 0;
+  @include text-style;
   padding-bottom: 29px;
 
   font-size: $small;

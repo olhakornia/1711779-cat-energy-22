@@ -1,0 +1,25 @@
+.product {
+  padding-bottom: 20px;
+}
+
+.product__title {
+  @include text-style;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $form-darkgrey2;
+  text-transform: uppercase;
+}
+
+.product__text {
+  font-family: $text-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $form-darkgrey1;
+}
+
+.product--more {
+  .product__title {
+    color: #111111;
+  }
+}

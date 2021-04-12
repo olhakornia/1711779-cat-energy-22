@@ -5,6 +5,7 @@
 
 .example__title {
   padding: 27px 0 33px 0;
+  margin: 0;
 
   font-size: 36px;
   font-weight: 400;
@@ -12,12 +13,14 @@
 }
 
 .example__description {
+  @include text-style;
   font-family: $text-font;
   font-size: $small;
   line-height: 18px;
 }
 
 .example__cost {
+  @include text-style;
   font-size: $small;
   line-height: 20px;
   text-transform: uppercase;

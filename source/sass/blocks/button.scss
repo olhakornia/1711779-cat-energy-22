@@ -1,4 +1,5 @@
 .button {
+  @include a-style;
   display: block;
   width: 280px;
   min-height: 40px;
@@ -10,4 +11,9 @@
   color: $white;
   text-transform: uppercase;
   text-align: center;
+
+  &--secondary {
+    color: $form-darkgrey1;
+    background-color: $lightgrey;
+  }
 }

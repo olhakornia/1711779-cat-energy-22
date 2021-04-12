@@ -1,0 +1,7 @@
+.socials__list {
+  @include ul-style;
+}
+
+.socials__link {
+  @include a-style;
+}
