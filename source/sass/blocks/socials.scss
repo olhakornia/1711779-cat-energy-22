@@ -1,5 +1,11 @@
 .socials__list {
   @include ul-style;
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item {
+  margin-right: 5px;
 }
 
 .socials__link {

@@ -7,4 +7,9 @@
   @include container;
   padding: 20px;
   background-color: $lightgrey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

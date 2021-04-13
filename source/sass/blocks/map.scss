@@ -1,6 +1,13 @@
 .map__box {
   @include container;
+  display: flex;
+  justify-content: space-between;
+
   padding-bottom: 28px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .map__text {
@@ -15,4 +22,8 @@
   font-family: $text-font;
   font-size: $small;
   line-height: 20px;
+
+  @media (min-height: $tablet-width) {
+    text-align: right;
+  }
 }

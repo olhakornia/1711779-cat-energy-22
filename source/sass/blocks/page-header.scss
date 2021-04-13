@@ -1,13 +1,4 @@
-.page-header__list {
-  @include ul-style;
-}
-
-.page-header__item {
-  a {
-    @include a-style;
-    font-size: 20px;
-    line-height: 1;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
+.page-header {
+  display: flex;
+  justify-content: space-around;
 }

@@ -2,6 +2,11 @@
   @include container;
   background-color: $darkgrey;
   padding-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .example__title {
@@ -25,4 +30,19 @@
   font-size: $small;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-wrap: nowrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    width: 366px;
+  }
 }

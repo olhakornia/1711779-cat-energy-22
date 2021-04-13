@@ -11,3 +11,14 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

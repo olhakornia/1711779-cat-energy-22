@@ -17,7 +17,7 @@
 }
 
 .features__item {
-  height: 60px;
+  min-height: 60px;
   margin-bottom: 20px;
   background-repeat: no-repeat;
 
@@ -45,4 +45,16 @@
   font-family: $text-font;
   font-size: $small;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: 250px;
+  }
 }

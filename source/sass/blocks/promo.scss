@@ -10,6 +10,11 @@
     background-image: url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     opacity: 85%;
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      background-image: none;
+      background-color: $white;
+    }
   }
 }
 
@@ -30,4 +35,17 @@
   line-height: 1;
   color: $white;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__title,
+  .promo__text {
+    color: $black;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    display: flex;
+  }
 }
