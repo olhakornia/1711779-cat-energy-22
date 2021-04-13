@@ -1,4 +1,5 @@
 .example {
+  @include container;
   background-color: $darkgrey;
   padding-bottom: 25px;
 }

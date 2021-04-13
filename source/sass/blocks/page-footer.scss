@@ -4,6 +4,7 @@
 }
 
 .page-footer__wrap {
+  @include container;
   padding: 20px;
   background-color: $lightgrey;
 }
