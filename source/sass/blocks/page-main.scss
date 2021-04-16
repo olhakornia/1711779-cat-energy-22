@@ -1,5 +1,5 @@
 .page-main__title {
-  @include text-style;
+  @include text-reset;
   padding-bottom: 37px;
 
   font-size: 36px;
@@ -8,7 +8,7 @@
 }
 
 .page-main__text {
-  @include text-style;
+  @include text-reset;
   padding-bottom: 39px;
 
   font-size: 14px;

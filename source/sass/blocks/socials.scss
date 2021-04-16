@@ -1,5 +1,5 @@
 .socials__list {
-  @include ul-style;
+  @include ul-reset;
   display: flex;
   justify-content: center;
 }
@@ -9,5 +9,5 @@
 }
 
 .socials__link {
-  @include a-style;
+  @include a-reset;
 }

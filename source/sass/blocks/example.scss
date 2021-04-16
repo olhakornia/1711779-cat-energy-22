@@ -1,6 +1,10 @@
 .example {
-  @include container;
+  width: 100%;
   background-color: $darkgrey;
+}
+
+.example__wrap {
+  @include container;
   padding-bottom: 25px;
 
   @media (min-width: $desktop-width) {
@@ -19,14 +23,14 @@
 }
 
 .example__description {
-  @include text-style;
+  @include text-reset;
   font-family: $text-font;
   font-size: $small;
   line-height: 18px;
 }
 
 .example__cost {
-  @include text-style;
+  @include text-reset;
   font-size: $small;
   line-height: 20px;
   text-transform: uppercase;

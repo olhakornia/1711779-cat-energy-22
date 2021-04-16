@@ -1,6 +1,11 @@
 .programs {
   @include container;
   padding-bottom: 27px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
@@ -9,6 +14,10 @@
 
   background-color: $lightgrey;
   background-repeat: no-repeat;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 
   &--slim {
     background-image: url("../img/cat_back-slim.svg");
@@ -25,16 +34,5 @@
 
   &--pro {
     background-image: url("../img/cat_back-pro.svg");
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .programs {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .programs__item {
-    width: 570px;
   }
 }

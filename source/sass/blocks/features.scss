@@ -13,7 +13,13 @@
 }
 
 .features__list {
-  @include ul-style;
+  @include ul-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .features__item {
@@ -36,6 +42,10 @@
   &--time {
     background-image: url("../img/time.svg");
   }
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
 }
 
 .features__description {
@@ -45,16 +55,4 @@
   font-family: $text-font;
   font-size: $small;
   line-height: 18px;
-}
-
-@media (min-width: $tablet-width) {
-  .features__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .features__item {
-    width: 250px;
-  }
 }

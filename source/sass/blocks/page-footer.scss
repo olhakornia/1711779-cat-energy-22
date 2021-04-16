@@ -3,10 +3,14 @@
   margin: 0;
 }
 
+.page-footer__color-wrap {
+  width: 100%;
+  background-color: $lightgrey;
+}
+
 .page-footer__wrap {
   @include container;
   padding: 20px;
-  background-color: $lightgrey;
 
   @media (min-width: $tablet-width) {
     display: flex;

@@ -1,5 +1,5 @@
 .other-products__title {
-  @include text-style;
+  @include text-reset;
   padding-bottom: 49px;
 
   font-size: 24px;
@@ -8,7 +8,7 @@
 }
 
 .other-products__list {
-  @include ul-style;
+  @include ul-reset;
 }
 
 .other-products__item {
@@ -16,7 +16,7 @@
 }
 
 .other-products__name {
-  @include text-style;
+  @include text-reset;
   font-size: 16px;
   line-height: 1;
   color: $form-darkgrey1;
@@ -43,7 +43,7 @@
 }
 
 .other-products__aside-text {
-  @include a-style;
+  @include a-reset;
   font-family: $text-font;
   font-size: 16px;
   line-height: 20px;
