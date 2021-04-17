@@ -8,3 +8,13 @@
   font-size: 12px;
   line-height: 1;
 }
+
+.stats-list {
+  min-height: 64px;
+  width: 124px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 77px;
+    width: 162px;
+  }
+}

@@ -1,5 +1,12 @@
+.slider {
+  display: flex;
+  justify-content: space-between;
+
+  width: 228px;
+}
+
 .slider__text {
-  @include text-style;
+  @include text-reset;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
