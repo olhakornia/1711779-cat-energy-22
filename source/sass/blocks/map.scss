@@ -1,17 +1,29 @@
 .map__box {
-  padding: 28px 0;
+  @include container;
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 28px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .map__text {
-  @include text-style;
+  @include text-reset;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
 .map__adress {
-  @include text-style;
+  @include text-reset;
   font-family: $text-font;
   font-size: $small;
   line-height: 20px;
+
+  @media (min-height: $tablet-width) {
+    text-align: right;
+  }
 }

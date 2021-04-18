@@ -1,7 +1,13 @@
 .socials__list {
-  @include ul-style;
+  @include ul-reset;
+  display: flex;
+  justify-content: center;
+}
+
+.socials__item {
+  margin-right: 5px;
 }
 
 .socials__link {
-  @include a-style;
+  @include a-reset;
 }

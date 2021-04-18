@@ -1,8 +1,8 @@
 .button {
-  @include a-style;
+  @include a-reset;
   display: block;
   width: 280px;
-  min-height: 40px;
+  height: 40px;
   padding: 10px;
   background-color: $green;
 
@@ -15,5 +15,11 @@
   &--secondary {
     color: $form-darkgrey1;
     background-color: $lightgrey;
+  }
+
+  &--choose-program {
+    @media (min-width: $tablet-width) {
+      order: 3;
+    }
   }
 }

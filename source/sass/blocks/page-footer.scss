@@ -3,7 +3,17 @@
   margin: 0;
 }
 
-.page-footer__wrap {
-  padding: 20px;
+.page-footer__color-wrap {
+  width: 100%;
   background-color: $lightgrey;
+}
+
+.page-footer__wrap {
+  @include container;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
