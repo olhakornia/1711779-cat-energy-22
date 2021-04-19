@@ -1,12 +1,5 @@
 .page-main__wrap {
   @include container;
-
-  &--top {
-    @media (min-width: $desktop-width) {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
 }
 
 .page-main__title {
@@ -25,4 +18,11 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.page-main__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
