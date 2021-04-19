@@ -5,8 +5,11 @@
 
   padding-bottom: 28px;
 
+  background-color: $lightgrey;
+
   @media (min-width: $desktop-width) {
     width: 570px;
+    background-color: $white;
   }
 }
 
