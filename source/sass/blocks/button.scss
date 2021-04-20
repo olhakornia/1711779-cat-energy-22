@@ -22,4 +22,21 @@
       order: 3;
     }
   }
+
+  &--other-products {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      grid-column: 1/-1;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 3/4;
+    }
+  }
+
+  &--small {
+    @media (min-width: $desktop-width) {
+      width: 168px;
+    }
+  }
 }
