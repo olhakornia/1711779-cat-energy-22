@@ -1,27 +1,58 @@
 .program__title {
-  padding: 30px 0 30px 91px;
-  margin-top: 0;
+  @include text-reset;
+  padding: 0 0 29px 91px;
+  margin: 0;
 
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 24px 0;
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 73px 214px;
+  }
 }
 
+
 .program__description {
-  padding: 0 0 38px 20px;
-  margin: 0;
+  @include text-reset;
+  padding: 0 0 23px 0;
 
   font-family: $text-font;
   font-size: $small;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 48px 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 23px 0;
+  }
 }
 
 .program__link {
   @include a-reset;
-  padding: 0 0 0 20px;
+  display: block;
+  padding: 19px 0 0 0;
 
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
+  border-top: 1px solid $link-border-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+  }
 }

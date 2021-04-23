@@ -1,6 +1,11 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__link {
@@ -8,6 +13,7 @@
   font-family: $text-font;
   font-size: 16px;
   line-height: 18px;
+  color: $form-darkgrey1;
 }
 
 .copyright__icon {

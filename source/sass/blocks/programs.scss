@@ -2,25 +2,43 @@
   @include container;
   padding-bottom: 27px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    padding-bottom: 71px;
   }
 }
 
 .programs__item {
+  position: relative;
   width: 100%;
-  padding-bottom: 18px;
+  padding: 30px 20px 18px 20px;
 
   background-color: $lightgrey;
   background-repeat: no-repeat;
 
+  @media (min-width: $tablet-width) {
+    padding: 77px 314px 53px 53px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 570px;
+    padding: 77px 52px 55px 52px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
   }
 
   &--slim {
-    background-image: url("../img/cat_back-slim.svg");
     margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
@@ -30,9 +48,53 @@
     @media (min-width: $desktop-width) {
       margin-bottom: 0;
     }
+
+    &::before {
+      top: 21px;
+      left: 22px;
+      background-image: url("../img/cat_back-slim.svg");
+
+      @media (min-width: $tablet-width) {
+        top: 81px;
+        left: auto;
+        right: 62px;
+        background-size: 200px;
+        height: 211px;
+        width: 200px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 41px;
+        left: 52px;
+        background-size: 100px;
+        height: 106px;
+        width: 100px;
+      }
+    }
   }
 
   &--pro {
-    background-image: url("../img/cat_back-pro.svg");
+    &::before {
+      background-image: url("../img/cat_back-pro.svg");
+      top: 24px;
+      left: 13px;
+
+      @media (min-width: $tablet-width) {
+        top: 91px;
+        left: auto;
+        right: 28px;
+        background-size: 268px;
+        height: 200px;
+        width: 268px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 47px;
+        left: 33px;
+        background-size: 134px;
+        height: 100px;
+        width: 134px;
+      }
+    }
   }
 }
