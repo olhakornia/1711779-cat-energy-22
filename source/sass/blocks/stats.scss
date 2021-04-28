@@ -9,12 +9,12 @@
 .stats__list {
   position: relative;
   min-height: 56px;
-  width: 124px;
+  width: 122px;
   margin: 0 0 34px 0;
 
   text-align: center;
   border: 1px solid #cdcdcd;
-  border-radius: 5px;
+  border-radius: 3px;
 
   align-self: flex-start;
 
@@ -30,9 +30,11 @@
 }
 
 .stats__number {
+  padding: 15px 0 18px 0;
+
   font-size: 24px;
   line-height: 1;
-  padding: 15px 0 18px 0;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     padding: 15px 0 20px 0;
@@ -44,29 +46,29 @@
 
 .stats__description {
   position: absolute;
-  top: auto;
   bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
-  width: 77px;
+  padding: 0 10px;
   margin: 0;
+
 
   font-family: $text-font;
   font-size: 12px;
   line-height: 1;
   color: $form-darkgrey1;
-  background-color: $darkgrey;
+  background-color: $lightgrey;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 132px;
     bottom: -5px;
-    width: 135px;
-
     font-size: $small;
     background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $darkgrey;
+    background-color: $lightgrey;
   }
 }
 

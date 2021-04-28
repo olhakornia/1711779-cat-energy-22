@@ -5,6 +5,13 @@
 }
 
 .map__box {
+  @media (min-width: $desktop-width) {
+    @include container;
+    position: relative;
+  }
+}
+
+.map__box-adress {
   @include container;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -19,8 +26,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 95px;
-    left: 110px;
-    right: auto;
+    left: 0;
     column-gap: 87px;
     width: 570px;
     padding: 67px 76px 60px 76px;
@@ -33,8 +39,14 @@
 .map__text {
   @include text-reset;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
+  color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .map__adress {
@@ -45,11 +57,19 @@
   color: $form-darkgrey1;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+  }
+}
+
+.map__adress-city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 20px;
   }
 }
 
