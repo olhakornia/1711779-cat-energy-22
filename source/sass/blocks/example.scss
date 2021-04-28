@@ -1,11 +1,25 @@
 .example {
   width: 100%;
-  background-color: $darkgrey;
+  background-color: $lightgrey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient($white 200px, $lightgrey 200px);
+  }
 }
 
 .example__wrap {
   @include container;
+  padding-top: 27px;
   padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    //padding-bottom: 64px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -14,12 +28,23 @@
 }
 
 .example__title {
-  padding: 27px 0 33px 0;
+  padding: 0 0 33px 0;
   margin: 0;
 
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 63px 0;
+
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 76px 0;
+  }
 }
 
 .example__description {
@@ -27,13 +52,19 @@
   font-family: $text-font;
   font-size: $small;
   line-height: 18px;
-}
 
-.example__cost {
-  @include text-reset;
-  font-size: $small;
-  line-height: 20px;
-  text-transform: uppercase;
+  padding: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 54px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 0 69px 0;
+  }
 }
 
 .example__stats {
@@ -50,3 +81,50 @@
     width: 366px;
   }
 }
+
+.example__cost {
+  @include text-reset;
+  margin: 0 auto;
+
+  font-size: $small;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    margin: 0;
+
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+
+    text-align: left;
+  }
+}
+
+.example__cost-text {
+  @media (min-width: $desktop-width) {
+    padding-right: 64px;
+  }
+}
+
+.example__cost-price {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin-top: 0;
+  }
+}
+
+// .example__image {
+//   display: block;
+//   width: 100%;
+//   padding-bottom: 23px;
+// }
