@@ -2,18 +2,16 @@
   font-size: 24px;
   line-height: 26px;
 
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 1;
-  }
-}
-
-.form__title {
   position: relative;
   display: block;
   padding-right: 14px;
 
-  background-color: #fff;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+  }
 
   &::after {  //Зеленые псевдоэлементы
     content: "";
@@ -41,14 +39,6 @@
   color: $form-darkgrey1;
   text-transform: uppercase;
 
-  &--radio {
-    color: $form-darkgrey2;
-  }
-
-  &--checkbox {
-    color: $black;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -67,6 +57,8 @@
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 45px;
+
+  color: $form-darkgrey2;
 
   @media (min-width: $tablet-width) {
     padding-left: 60px;
@@ -98,6 +90,8 @@
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 45px;
+
+  color: $black;
 
   @media (min-width: $tablet-width) {
     padding-left: 60px;
@@ -163,12 +157,12 @@
   }
 }
 
-.form__input:checked~.form__label--radio::before {
+.form__input:checked ~ .form__label--radio::before {
   background-color: #68b738;
   background-clip: content-box;
 }
 
-.form__input:checked~.form__label--checkbox::before {
+.form__input:checked ~ .form__label--checkbox::before {
   background: url("../img/check.svg") no-repeat center;
   // background-size: 21px;
   // background-size: 21px auto;
@@ -250,7 +244,7 @@
 
     @media (min-width: $tablet-width) {
       content: none;
-     }
+    }
   }
 
   &::after {
@@ -264,7 +258,7 @@
     left: -20px;
 
     @media (min-width: $tablet-width) {
-     content: none;
+      content: none;
     }
   }
 }
