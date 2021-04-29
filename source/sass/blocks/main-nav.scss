@@ -58,16 +58,21 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: $white;
+  }
 
-    &--active {
-      &::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        bottom: -8px;
-        left: 0;
-        border-bottom: 2px solid $white;
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+
+      &--active {
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          bottom: -8px;
+          left: 0;
+          border-bottom: 2px solid $white;
+        }
       }
     }
   }

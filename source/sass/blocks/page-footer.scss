@@ -1,6 +1,11 @@
 .page-footer__map {
   padding: 0;
   margin: 0;
+  background-color: $lightgrey;
+
+  &--index {
+    background-color: $white;
+  }
 }
 
 .page-footer__color-wrap {
