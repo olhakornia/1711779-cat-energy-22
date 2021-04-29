@@ -2,6 +2,14 @@
   @include ul-reset;
   display: flex;
   justify-content: center;
+  padding: 20px 0;
+  border-top: 1px solid $link-border-grey;
+  border-bottom: 1px solid $link-border-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .socials__item {

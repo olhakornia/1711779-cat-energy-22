@@ -1,39 +1,88 @@
 .promo {
-  @include container;
-  padding-bottom: 22px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      right: 0;
+      left: auto;
+      width: 50%;
+      height: 100%;
+    }
+  }
+
+  &::before {
+    background-image: url("../img/index-background-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &::after {
+    background-color: rgba(104, 183, 56, 0.85);
+  }
 }
 
 .promo__wrap {
+  @include container;
+  position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 302px;
-  background-image: url("../img/index-background-desktop.jpg");
-  background-repeat: no-repeat;
-  //background-color: $green;
-  //opacity: 85%;
+  padding: 27px 0 22px 0;
+
+  text-align: center;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     background-image: none;
     background-color: $white;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 38px 0 0 117px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 223px 0 230px 110px;
+    margin-bottom: 82px;
+  }
 }
 
 .promo__title {
-  padding: 27px 0 25px 0;
+  z-index: 1;
+  padding: 0 0 25px 0;
   margin: 0;
 
   font-size: 36px;
+  font-weight: 400;
   line-height: 1;
   color: $white;
 
   @media (min-width: $tablet-width) {
     order: 1;
+    padding-bottom: 41px;
+
+    font-size: 60px;
+    line-height: 1;
     color: $black;
   }
 }
 
 .promo__text {
   @include text-reset;
+  z-index: 1;
   padding-bottom: 29px;
 
   font-size: $small;
@@ -43,12 +92,33 @@
 
   @media (min-width: $tablet-width) {
     order: 2;
+    padding-bottom: 49px;
+
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 1;
     color: $black;
   }
 }
 
 .promo__image {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  z-index: 1;
+
   @media (min-width: $tablet-width) {
     order: 4;
+    max-width: 620px;
+    margin-top: -60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 478px;
+    top: 144px;
+    max-width: 520px;
+    margin: 0;
   }
 }

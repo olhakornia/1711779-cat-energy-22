@@ -14,7 +14,7 @@
 .other-products__wrap {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 896px 1fr;
     column-gap: 80px;
   }
 }
