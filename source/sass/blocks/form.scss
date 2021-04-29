@@ -121,6 +121,7 @@
 }
 
 .form__input {
+  font-family: $main-font;
   font-size: 16px;
   line-height: 18px;
 
@@ -304,6 +305,8 @@
   margin-top: 38px;
   border: 1px solid #e7e7e7;
   resize: none;
+
+  font-family: $main-font;
 
   @media (min-width: $tablet-width) {
     margin-top: 76px;
