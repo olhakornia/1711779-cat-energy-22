@@ -1,6 +1,7 @@
 .button {
   @include a-reset;
   display: block;
+  margin: 0 auto;
   width: 280px;
   height: 40px;
   padding: 10px;
@@ -13,15 +14,6 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
-    width: 244px;
-    height: 54px;
-    padding: 14px;
-
-    font-size: 20px;
-    line-height: 1;
-  }
-
   &:hover {
     background-color: $darkgreen;
   }
@@ -31,9 +23,19 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
-  &--secondary {
-    color: $form-darkgrey1;
-    background-color: $lightgrey;
+  &--index {
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      order: 3;
+      width: 244px;
+      height: 54px;
+      margin: 0;
+
+      padding: 14px;
+      font-size: 20px;
+      line-height: 1;
+    }
   }
 
   &--form {
@@ -43,37 +45,47 @@
 
     @media (min-width: $tablet-width) {
       width: 100%;
+      margin: 0;
       height: 52px;
+
       padding: 14px;
       font-size: 20px;
+      line-height: 1;
     }
   }
 
-  &--choose-program {
-    z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
+  &--catalog-main {
+    font-size: 16px;
+    line-height: 20px;
 
     @media (min-width: $tablet-width) {
-      order: 3;
-      margin: 0;
+      width: 248px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 168px;
     }
   }
 
-  &--other-products {
+  &--catalog-secondary {
+    color: $form-darkgrey1;
+    background-color: $lightgrey;
+  }
+
+  &--catalog-other-products {
+    font-size: 16px;
+    line-height: 20px;
+
     @media (min-width: $tablet-width) {
       width: 100%;
       grid-column: 1/-1;
+      padding: 10px;
+      margin-top: 28px;
     }
 
     @media (min-width: $desktop-width) {
       grid-column: 3/4;
-    }
-  }
-
-  &--small {
-    @media (min-width: $desktop-width) {
-      width: 168px;
+      margin: 0;
     }
   }
 }
