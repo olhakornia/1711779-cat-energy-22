@@ -62,7 +62,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 38px 0 0 0; //убрала паддинг слева 117px
+    padding: 38px 0 0 0;
     text-align: left;
   }
 
@@ -85,7 +85,7 @@
   @media (min-width: $tablet-width) {
     order: 1;
     padding-bottom: 41px;
-    padding-left: 117px; //добавила паддинг
+    padding-left: 117px;
 
     font-size: 60px;
     line-height: 1;
@@ -93,7 +93,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0; //убрала на десктопе
+    padding-left: 0;
   }
 }
 
@@ -110,7 +110,7 @@
   @media (min-width: $tablet-width) {
     order: 2;
     padding-bottom: 49px;
-    padding-left: 117px; //добавила паддинг
+    padding-left: 117px;
 
     font-family: $main-font;
     font-size: 20px;
@@ -119,7 +119,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0; //убрала на десктопе
+    padding-left: 0;
   }
 }
 
@@ -130,14 +130,13 @@
 
   @media (min-width: $tablet-width) {
     order: 4;
-    margin-top: -40px;
+    margin-top: -80px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 232px; //поменять
-    right: auto;
-    top: 91px; //поменять
+    left: 448px;
+    top: 141px;
     margin: 0;
   }
 }
