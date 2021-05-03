@@ -31,10 +31,15 @@
       width: 244px;
       height: 54px;
       margin: 0;
+      margin-left: 117px; //добавила паддинг
 
       padding: 14px;
       font-size: 20px;
       line-height: 1;
+    }
+
+    @media (min-width: $desktop-width) { //убрала на десктопе
+      margin: 0;
     }
   }
 

@@ -58,6 +58,8 @@
   counter-increment: counter;
 
   @media (min-width: $tablet-width) {
+    background-size: 80px 80px;
+
     &::before {
       content: counter(counter);
       position: absolute;

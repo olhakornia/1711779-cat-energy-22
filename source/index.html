@@ -12,8 +12,8 @@
       <div class="page-header__wrap">
         <a class="page-header__logo">
           <picture>
-            <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
-            <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" >
             <img src="img/logo-mobile.svg" alt="Логотип Cat Energy">
           </picture>
         </a>
@@ -42,7 +42,11 @@
       <div class="promo__wrap">
         <h1 class="promo__title"> Функциональное <br> питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="img/index-can-mobile.png" alt="Корм Cat Energy">
+        <picture class="promo__image">
+          <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet.png, img/index-can-tablet@2x.png 2x">
+          <img class="promo__image" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм Cat Energy">
+        </picture>
         <a class="button button--index" href="#">Подобрать программу</a>
       </div>
     </div>
@@ -134,10 +138,17 @@
         <div class="example__compare compare">
           <ul class="compare__pictures">
             <li class="compare__image compare__image--before">
-              <img src="img/before-mobile.png" alt="Фотография Бориса ДО">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/before-desktop.png, img/before-desktop@2x.png 2x">
+                <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Фотография Бориса ДО">
+              </picture>
+
             </li>
             <li class="compare__image compare__image--after">
-              <img src="img/after-mobile.png" alt="Фотография Бориса ПОСЛЕ">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/after-desktop.png, img/after-desktop@2x.png 2x">
+                <img src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Фотография Бориса ПОСЛЕ">
+              </picture>
             </li>
           </ul>
           <div class="example__slider slider">
