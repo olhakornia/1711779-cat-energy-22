@@ -36,6 +36,7 @@
 
 .product__wrapper {
   display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -43,8 +44,12 @@
 }
 
 .product__wrap-img {
+  text-align: center;
+
   @media (max-width: $mobile-width-only) {
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -60,6 +65,11 @@
   }
 }
 
+// .product__image {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 // .product__image {
 //   @media (min-width: $tablet-width) {
 //     width: 168px;
