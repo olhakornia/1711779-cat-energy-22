@@ -19,3 +19,36 @@
 .socials__link {
   @include a-reset;
 }
+
+.socials__icon {
+  fill: #666666;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &--fb {
+    stroke: #666666;
+
+    &:hover {
+      stroke: $green;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 28px;
+      height: 33px;
+    }
+  }
+}
