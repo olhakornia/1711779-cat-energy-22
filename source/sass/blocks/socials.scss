@@ -1,7 +1,9 @@
 .socials__list {
   @include ul-reset;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   padding: 20px 0;
   border-top: 1px solid $link-border-grey;
   border-bottom: 1px solid $link-border-grey;
@@ -13,7 +15,7 @@
 }
 
 .socials__item {
-  margin-right: 5px;
+  margin: 0 15px;
 }
 
 .socials__link {
