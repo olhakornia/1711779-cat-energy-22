@@ -177,6 +177,25 @@
   }
 }
 
+.form__input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.form__input-icon {
+  position: absolute;
+  display: block;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    right: 20px;
+  }
+}
+
 .form__input {
   font-family: $main-font;
   font-size: 16px;
@@ -198,10 +217,32 @@
     padding: 13px 15px 15px 15px;
 
     border: 1px solid #e7e7e7;
+    outline: none;
+
+    &:focus {
+      border: 2px solid #444444; //Ошибка
+
+      ~ .form__input-icon {
+          color: $green;
+      }
+    }
+
+    // &:invalid {
+    //   border: 1px solid #ff8282;
+
+    //   ~ .form__input-icon {
+    //     color: #ff8282;
+    //   }
+    // }
 
     @media (min-width: $tablet-width) {
       height: 52px;
     }
+  }
+
+  &[type="tel"],
+  &[type="email"] {
+    padding-right: 40px; //Новое
   }
 
   &[type="radio"],

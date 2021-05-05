@@ -80,11 +80,21 @@
         <div class="form__contacts-wrap">
           <div class="form__field form__field--contacts">
             <label class="form__label form__label--text" for="email">E-mail:<sup>*</sup></label>
-            <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+            <div class="form__input-wrapper">
+              <input class="form__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <svg class="form__input-icon" width="20" height="15">
+                <use href="img/sprite.svg#email"></use>
+              </svg>
+            </div>
           </div>
           <div class="form__field form__field--contacts">
             <label class="form__label form__label--text" for="tel">Телефон:<sup>*</sup></label>
-            <input class="form__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+            <div class="form__input-wrapper">
+              <input class="form__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+              <svg class="form__input-icon form__input-icon--phone" width="20" height="21">
+                <use href="img/sprite.svg#phone"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </fieldset>
