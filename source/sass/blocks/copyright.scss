@@ -19,12 +19,20 @@
   @media (min-width: $tablet-width) {
     margin-right: 22px;;
   }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .copyright__icon {
-  fill: #666666;
+  color: #666666;
 
   &:hover {
-    fill: $green;
+    color: $green;
+  }
+
+  &:active {
+    opacity: 30%;
   }
 }

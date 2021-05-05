@@ -39,20 +39,55 @@
   }
 }
 
-.program__link {
-  @include a-reset;
-  display: block;
+.program__link-wrap {
   padding: 19px 0 0 0;
-
-  font-size: 16px;
-  line-height: 1;
-  text-transform: uppercase;
   border-top: 1px solid $link-border-grey;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    border: none;
+  }
+}
+
+.program__link {
+  @include a-reset;
+  position: relative;
+  display: inline-block;
+  padding-right: 50px;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    border: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 23px;
+    height: 12px;
+    right: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../img/icon_arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: right center;
+
+    transition-duration: 0.1s;
+  }
+
+  &:hover {
+    &::after {
+      width: 32px;
+      right: 0;
+    }
+  }
+
+  &:active {
+    opacity: 30%;
   }
 }

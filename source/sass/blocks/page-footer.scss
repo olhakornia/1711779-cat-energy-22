@@ -36,4 +36,8 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  &:active {
+    opacity: 30%
+  }
 }
