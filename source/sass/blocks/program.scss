@@ -1,6 +1,6 @@
 .program__title {
   @include text-reset;
-  padding: 0 0 29px 91px;
+  padding: 0 0 29px 71px;
   margin: 0;
 
   font-size: 24px;
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 73px 214px;
+    padding: 0 0 73px 162px;
   }
 }
 
