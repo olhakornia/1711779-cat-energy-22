@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="img/favicon-152x152.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Cat Energy</title>
 </head>
@@ -42,8 +45,11 @@
       <div class="main-catalog__wrap">
         <div class="main-catalog__item product">
           <div class="product__wrapper">
-            <div class="product__wrap-img">
-              <img class="product__image" src="img/catalog-1-desktop.png" alt="Cat Energy Pro chicken">
+            <div class="product__wrap-img product__wrap-img--slim">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-1-desktop.png, img/catalog-1-desktop@2x.png 2x">
+                <img class="product__image" src="img/catalog-1-mobile.png" srcset="img/catalog-1-mobile@2x.png 2x" alt="Cat Energy Pro chicken">
+              </picture>
             </div>
             <div class="product__wrap">
               <p class="product__title">Cat Energy PRO <span class="product__weight">500 г</span></p>
@@ -67,8 +73,11 @@
         </div>
         <div class="main-catalog__item product">
           <div class="product__wrapper">
-            <div class="product__wrap-img">
-              <img class="product__image" src="img/catalog-2-desktop.png" alt="Cat Energy Pro chicken">
+            <div class="product__wrap-img product__wrap-img--pro">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-2-desktop.png, img/catalog-2-desktop@2x.png 2x">
+                <img class="product__image" src="img/catalog-2-mobile.png" srcset="img/catalog-2-mobile@2x.png 2x" alt="Cat Energy Pro chicken">
+              </picture>
             </div>
             <div class="product__wrap">
               <p class="product__title">Cat Energy Pro <span class="product__weight">1000 г</span></p>
@@ -92,8 +101,11 @@
         </div>
         <div class="main-catalog__item product">
           <div class="product__wrapper">
-            <div class="product__wrap-img">
-              <img class="product__image" src="img/catalog-3-desktop.png" alt="Cat Energy Pro fish">
+            <div class="product__wrap-img product__wrap-img--slim">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-3-desktop.png, img/catalog-3-desktop@2x.png 2x">
+                <img class="product__image" src="img/catalog-3-mobile.png" srcset="img/catalog-3-mobile@2x.png 2x" alt="Cat Energy Pro fish">
+              </picture>
             </div>
             <div class="product__wrap">
               <p class="product__title">Cat Energy Pro <span class="product__weight">500 г</span></p>
@@ -117,8 +129,11 @@
         </div>
         <div class="main-catalog__item product">
           <div class="product__wrapper">
-            <div class="product__wrap-img">
-              <img class="product__image" src="img/catalog-4-desktop.png" alt="Cat Energy Pro fish">
+            <div class="product__wrap-img product__wrap-img--pro">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-4-desktop.png, img/catalog-4-desktop@2x.png 2x">
+                <img class="product__image" src="img/catalog-4-mobile.png" srcset="img/catalog-4-mobile@2x.png 2x" alt="Cat Energy Pro fish">
+              </picture>
             </div>
             <div class="product__wrap">
               <p class="product__title">Cat Energy Pro <span class="product__weight">1000 г</span></p>
@@ -142,8 +157,11 @@
         </div>
         <div class="main-catalog__item product">
           <div class="product__wrapper">
-            <div class="product__wrap-img">
-              <img class="product__image" src="img/catalog-5-desktop.png" alt="Cat Energy Slim buckwheat">
+            <div class="product__wrap-img product__wrap-img--slim">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-5-desktop.png, img/catalog-5-desktop@2x.png 2x">
+                <img class="product__image" src="img/catalog-5-mobile.png" srcset="img/catalog-5-mobile@2x.png 2x" alt="Cat Energy Slim buckwheat">
+              </picture>
             </div>
             <div class="product__wrap">
               <p class="product__title">Cat Energy Slim <span class="product__weight">500 г</span></p>
@@ -167,8 +185,11 @@
         </div>
         <div class="main-catalog__item product">
           <div class="product__wrapper">
-            <div class="product__wrap-img">
-              <img class="product__image" src="img/catalog-6-desktop.png" alt="Cat Energy Slim buckwheat">
+            <div class="product__wrap-img product__wrap-img--pro">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-6-desktop.png, img/catalog-6-desktop@2x.png 2x">
+                <img class="product__image" src="img/catalog-6-mobile.png" srcset="img/catalog-6-mobile@2x.png 2x" alt="Cat Energy Slim buckwheat">
+              </picture>
             </div>
             <div class="product__wrap">
               <p class="product__title">Cat Energy Slim <span class="product__weight">1000 г</span></p>
@@ -192,8 +213,11 @@
         </div>
         <div class="main-catalog__item product">
           <div class="product__wrapper">
-            <div class="product__wrap-img">
-              <img class="product__image" src="img/catalog-7-desktop.png" alt="Cat Energy Slim rice">
+            <div class="product__wrap-img product__wrap-img--slim">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-7-desktop.png, img/catalog-7-desktop@2x.png 2x">
+                <img class="product__image" src="img/catalog-7-mobile.png" srcset="img/catalog-7-mobile@2x.png 2x" alt="Cat Energy Slim rice">
+              </picture>
             </div>
             <div class="product__wrap">
               <p class="product__title">Cat Energy Slim <span class="product__weight">500 г</span></p>
@@ -282,42 +306,46 @@
     </div>
     <div class="page-footer__color-wrap">
       <div class="page-footer__wrap">
-        <a class="page-footer__logo" href="index.html">
-          <img src="img/logo-title.svg" alt="Логотип Cat Energy">
+        <a class="page-footer__logo">
+          <img src="img/logo-title.svg" alt="Логотип Cat Energy" width="128" height="24">
         </a>
         <div class="page-footer__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
-              <a class="socials__link socials__link--vk" href="#">VK</a>
+              <a class="socials__link socials__link--vk" href="#">
+                <span class="visually-hidden">Найти нас Вконтакте</span>
+                <svg class="socials__icon socials__icon--vk" width="23" height="16">
+                  <use href="img/sprite.svg#vkontakte"></use>
+                </svg>
+              </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--inst" href="#">INST</a>
+              <a class="socials__link socials__link--inst" href="#">
+                <span class="visually-hidden">Найти нас в Инстаграме</span>
+                <svg class="socials__icon socials__icon--inst" width="16" height="16">
+                  <use href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--fb" href="#">FB</a>
+              <a class="socials__link socials__link--fb" href="#">
+                <span class="visually-hidden">Найти нас в Фейсбуке</span>
+                <svg class="socials__icon socials__icon--fb" width="22" height="22">
+                  <use href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <img class="copyright__icon" src="img/htmlacademy.svg" alt="Логотип htmlacademy">
+          <svg class="copyright__icon" width="27" height="34">
+            <use href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </div>
       </div>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.page-header');
-    var navToggle = document.querySelector('.page-header__toggle');
-
-    navMain.classList.remove('page-header--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('page-header--opened')) {
-        navMain.classList.remove('page-header--opened');
-      } else {
-        navMain.classList.add('page-header--opened');
-      }
-    });
-  </script>
+  <script src="js/page-header.js"></script>
 </body>
 </html>

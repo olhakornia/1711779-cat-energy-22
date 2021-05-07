@@ -31,14 +31,20 @@
       width: 244px;
       height: 54px;
       margin: 0;
+      margin-left: 114px;
 
-      padding: 14px;
+      padding: 17px;
       font-size: 20px;
       line-height: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
     }
   }
 
   &--form {
+    font-family: $main-font;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -70,6 +76,15 @@
   &--catalog-secondary {
     color: $form-darkgrey1;
     background-color: $lightgrey;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+      background-color: #ebebeb;
+    }
   }
 
   &--catalog-other-products {

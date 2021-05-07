@@ -139,13 +139,32 @@
     border: 1px solid #cdcdcd;
     border-radius: 50%;
 
+    &:focus {
+      border: 1px solid #444444;
+    }
+
     @media (min-width: $tablet-width) {
       width: 40px;
       height: 40px;
       padding: 11px;
     }
   }
+
+  &:hover {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:disabled {
+    opacity: 30%;
+
+    &::before {
+      opacity: 30%;
+    }
+  }
 }
+
 
 .form__label--checkbox {
   position: relative;
@@ -175,6 +194,39 @@
       height: 40px;
     }
   }
+
+  &:hover {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:disabled {
+    opacity: 30%;
+
+    &::before {
+      opacity: 30%;
+    }
+  }
+}
+
+.form__input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.form__input-icon {
+  position: absolute;
+  display: block;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    right: 20px;
+  }
 }
 
 .form__input {
@@ -198,10 +250,36 @@
     padding: 13px 15px 15px 15px;
 
     border: 1px solid #e7e7e7;
+    outline: none;
+
+    &:hover {
+      border: 2px solid #cdcdcd;
+    }
+
+    &:focus {
+      border: 2px solid #444444;
+
+      ~ .form__input-icon {
+        color: $green;
+      }
+    }
+
+    &:focus:invalid {
+      border: 1px solid #ff8282;
+
+      ~ .form__input-icon {
+        color: #ff8282;
+      }
+    }
 
     @media (min-width: $tablet-width) {
       height: 52px;
     }
+  }
+
+  &[type="tel"],
+  &[type="email"] {
+    padding-right: 40px; //Новое
   }
 
   &[type="radio"],
@@ -287,7 +365,7 @@
   &::after {
     content: "";
     position: absolute;
-    // display: block;
+    display: block;
     height: 1px;
     width: 100vw;
     background-color: #d9d9d9;
@@ -345,6 +423,11 @@
   resize: none;
 
   font-family: $main-font;
+  outline: none;
+
+  &:focus {
+    border: 2px solid #444444;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 76px;

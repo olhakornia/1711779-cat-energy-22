@@ -3,12 +3,12 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 8px;
+    padding-bottom: 25px;
     border-bottom: 1px solid $border-grey;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 8px;
+    padding-bottom: 11px;
     border-bottom: none;
   }
 }
@@ -39,17 +39,21 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 62px;
+    row-gap: 16px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 77px;
+    column-gap: 80px;
   }
 }
 
 .features__item {
   position: relative;
+  display: flex;
+  align-items: center;
   min-height: 60px;
   margin-bottom: 20px;
   background-repeat: no-repeat;
@@ -57,8 +61,33 @@
 
   counter-increment: counter;
 
+  &::before {
+    content: "";
+    position: static;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: $tablet-width) {
+    display: block;
+    min-height: 280px;
+    width: 245px;
+    padding-top: 40px;
+
     &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 30px;
+      background-size: 80px 80px;
+    }
+
+    &::after {
       content: counter(counter);
       position: absolute;
       right: 0;
@@ -72,41 +101,41 @@
 
 
   &--compound {
-    background-image: url("../img/compound.svg");
+    &::before {
+      background-image: url("../img/compound.svg");
+    }
   }
 
   &--form {
-    background-image: url("../img/form.svg");
+    &::before {
+      background-image: url("../img/form.svg");
+    }
   }
 
   &--nutrition {
-    background-image: url("../img/nutrition.svg");
+    &::before {
+      background-image: url("../img/nutrition.svg");
+    }
   }
 
   &--time {
-    background-image: url("../img/time.svg");
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 280px;
-    width: 250px;
-    margin-bottom: 37px;
-
-    background-position: top 40px left 0;
+    &::before {
+      background-image: url("../img/time.svg");
+    }
   }
 }
 
 .features__description {
-  padding-left: 80px;
+  // padding-left: 80px;
   margin: 0;
 
+  vertical-align: middle;
   font-family: $text-font;
   font-size: $small;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 151px 20px 57px 0;
-
+    // padding: 151px 20px 57px 0;
     font-size: 16px;
     line-height: 24px;
   }

@@ -1,6 +1,6 @@
 .program__title {
   @include text-reset;
-  padding: 0 0 29px 91px;
+  padding: 0 0 29px 71px;
   margin: 0;
 
   font-size: 24px;
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 73px 214px;
+    padding: 0 0 73px 162px;
   }
 }
 
@@ -35,24 +35,60 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 23px 0;
+    padding: 0 0 28px 0;
+  }
+}
+
+.program__link-wrap {
+  padding: 14px 0 0 0;
+  border-top: 1px solid $link-border-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
   }
 }
 
 .program__link {
   @include a-reset;
-  display: block;
-  padding: 19px 0 0 0;
-
+  position: relative;
+  display: inline-block;
+  padding-right: 48px;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
-  border-top: 1px solid $link-border-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding-right: 56px;
     font-size: 20px;
     line-height: 30px;
-    border: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 23px;
+    height: 12px;
+    right: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../img/icon_arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: right center;
+
+    transition-duration: 0.1s;
+  }
+
+  &:hover {
+    &::after {
+      width: 32px;
+      right: 0;
+    }
+  }
+
+  &:active {
+    opacity: 30%;
   }
 }

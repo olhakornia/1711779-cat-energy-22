@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="img/favicon-152x152.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Cat Energy</title>
 </head>
@@ -12,8 +15,8 @@
       <div class="page-header__wrap">
         <a class="page-header__logo">
           <picture>
-            <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
-            <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" >
             <img src="img/logo-mobile.svg" alt="Логотип Cat Energy">
           </picture>
         </a>
@@ -42,7 +45,11 @@
       <div class="promo__wrap">
         <h1 class="promo__title"> Функциональное <br> питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="img/index-can-mobile.png" alt="Корм Cat Energy">
+        <picture class="promo__image">
+          <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet.png, img/index-can-tablet@2x.png 2x">
+          <img src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм Cat Energy">
+        </picture>
         <a class="button button--index" href="#">Подобрать программу</a>
       </div>
     </div>
@@ -56,7 +63,9 @@
           Energy Slim поможет вашему
           питомцу сбросить лишний вес.
         </p>
-        <a class="program__link" href="#">Каталог slim</a>
+        <div class="program__link-wrap">
+          <a class="program__link" href="#">Каталог slim</a>
+        </div>
       </div>
       <div class="programs__item programs__item--pro program">
         <h3 class="program__title">Набор массы</h3>
@@ -67,7 +76,9 @@
           вашему коту нарастить
           необходимые мышцы!
         </p>
-        <a class="program__link" href="#">Каталог pro</a>
+        <div class="program__link-wrap">
+          <a class="program__link" href="#">Каталог pro</a>
+        </div>
       </div>
     </section>
     <section class="features">
@@ -132,23 +143,28 @@
           </div>
         </div>
         <div class="example__compare compare">
+          <input type="radio" id="before" class="visually-hidden slider__before" name="image-toggle">
+          <input type="radio" id="after" class="visually-hidden slider__after" name="image-toggle">
           <ul class="compare__pictures">
             <li class="compare__image compare__image--before">
-              <img src="img/before-mobile.png" alt="Фотография Бориса ДО">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/before-desktop.png, img/before-desktop@2x.png 2x">
+                <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Фотография Бориса ДО">
+              </picture>
             </li>
             <li class="compare__image compare__image--after">
-              <img src="img/after-mobile.png" alt="Фотография Бориса ПОСЛЕ">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/after-desktop.png, img/after-desktop@2x.png 2x">
+                <img src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Фотография Бориса ПОСЛЕ">
+              </picture>
             </li>
           </ul>
           <div class="example__slider slider">
-            <p class="slider__label slider__label--before">Было</p>
+            <label class="slider__label slider__label--before" for="before">Было</label>
             <div class="slider__scale">
-              <label class="slider__input-group"><input class="slider__input" type="range" min="0" max="100" step="1" value="0">
-                <span class="visually-hidden">Соотношение вариантов</span>
-                <span class="slider__pin" style="left: 50%;"></span>
-              </label>
+              <div class="slider__grip" style="transition: margin-left 2.5s ease-in-out 0s;"></div>
             </div>
-            <p class="slider__label slider__label--after">Стало</p>
+            <label class="slider__label slider__label--after" for="after">Стало</label>
           </div>
         </div>
       </div>
@@ -171,41 +187,45 @@
     <div class="page-footer__color-wrap">
       <div class="page-footer__wrap">
         <a class="page-footer__logo">
-          <img src="img/logo-title.svg" alt="Логотип Cat Energy">
+          <img src="img/logo-title.svg" alt="Логотип Cat Energy" width="128" height="24">
         </a>
         <div class="page-footer__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
-              <a class="socials__link socials__link--vk" href="#">VK</a>
+              <a class="socials__link socials__link--vk" href="#">
+                <span class="visually-hidden">Найти нас Вконтакте</span>
+                <svg class="socials__icon socials__icon--vk" width="23" height="16">
+                  <use href="img/sprite.svg#vkontakte"></use>
+                </svg>
+              </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--inst" href="#">INST</a>
+              <a class="socials__link socials__link--inst" href="#">
+                <span class="visually-hidden">Найти нас в Инстаграме</span>
+                <svg class="socials__icon socials__icon--inst" width="16" height="16">
+                  <use href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--fb" href="#">FB</a>
+              <a class="socials__link socials__link--fb" href="#">
+                <span class="visually-hidden">Найти нас в Фейсбуке</span>
+                <svg class="socials__icon socials__icon--fb" width="22" height="22">
+                  <use href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <img class="copyright__icon" src="img/htmlacademy.svg" alt="Логотип htmlacademy">
+          <svg class="copyright__icon" width="27" height="34">
+            <use href="img/sprite.svg#htmlacademy"></use>
+          </svg>
         </div>
       </div>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.page-header');
-    var navToggle = document.querySelector('.page-header__toggle');
-
-    navMain.classList.remove('page-header--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('page-header--opened')) {
-        navMain.classList.remove('page-header--opened');
-      } else {
-        navMain.classList.add('page-header--opened');
-      }
-    });
-  </script>
+  <script src="js/page-header.js"></script>
 </body>
 </html>

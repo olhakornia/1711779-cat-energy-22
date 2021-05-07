@@ -1,7 +1,9 @@
 .socials__list {
   @include ul-reset;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   padding: 20px 0;
   border-top: 1px solid $link-border-grey;
   border-bottom: 1px solid $link-border-grey;
@@ -13,9 +15,38 @@
 }
 
 .socials__item {
-  margin-right: 5px;
+  margin: 0 15px;
 }
 
 .socials__link {
   @include a-reset;
+}
+
+.socials__icon {
+  color: #666666;
+
+  &:hover {
+    color: $green;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 28px;
+      height: 33px;
+    }
+  }
 }
