@@ -19,7 +19,7 @@
       right: 0;
       left: auto;
       width: 50%;
-      height: 100%;
+      height: 94%;
     }
   }
 
@@ -62,13 +62,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 38px 0 0 0;
+    padding: 32px 0 0 0;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     padding: 223px 0 230px 110px;
-    margin-bottom: 82px;
+    margin-bottom: 38px;
   }
 }
 
@@ -135,7 +135,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 448px;
+    left: 478px;
     top: 141px;
     margin: 0;
   }

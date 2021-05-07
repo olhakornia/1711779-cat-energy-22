@@ -35,12 +35,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 23px 0;
+    padding: 0 0 28px 0;
   }
 }
 
 .program__link-wrap {
-  padding: 19px 0 0 0;
+  padding: 14px 0 0 0;
   border-top: 1px solid $link-border-grey;
 
   @media (min-width: $tablet-width) {
@@ -53,12 +53,13 @@
   @include a-reset;
   position: relative;
   display: inline-block;
-  padding-right: 50px;
+  padding-right: 48px;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-right: 56px;
     font-size: 20px;
     line-height: 30px;
   }

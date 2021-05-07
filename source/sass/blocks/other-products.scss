@@ -143,7 +143,7 @@
   padding: 65px 60px 40px 60px;
   text-align: center;
   background-color: $green;
-  background-image: url("../../source/img/gift-photo-mobile.png");
+  background-image: url("../img/gift-photo-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -169,7 +169,6 @@
     padding-bottom: 0;
   }
 }
-
 
 .other-products__aside-text {
   @include a-reset;
