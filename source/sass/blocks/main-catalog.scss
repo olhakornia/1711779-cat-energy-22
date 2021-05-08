@@ -1,13 +1,15 @@
 .main-catalog {
   @include container;
   padding-top: 27px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 36px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 187px;
+    padding-bottom: 0;
   }
 }
 
@@ -21,8 +23,12 @@
   line-height: 1;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 120px; //Потом изменить
+    padding-bottom: 92px;
     font-size: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 95px;
   }
 
   &::after {

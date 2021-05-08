@@ -3,12 +3,28 @@
   padding-top: 20px;
   padding-bottom: 25px;
 
+    // @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    //   &:nth-last-child(-n+2) {
+    //     margin-bottom: 0;
+    //   }
+    // }
+
   @media (min-width: $tablet-width) {
     padding: 0 37px 40px 37px;
     margin: 70px 0;
 
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+
     background-color: $lightgrey;
   }
+
+  // @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  //   &:nth-last-child(2) {
+  //     margin-bottom: 0;
+  //   }
+  // }
 
   &::after {
     content: "";
@@ -33,6 +49,7 @@
       display: block;
       margin: 0 auto;
       margin-bottom: 23px;
+      margin-top: 5px;
       width: 30px;
       height: 30px;
       background-image: url("../../img/icon__plus.svg");
@@ -66,29 +83,32 @@
 .product__wrap-img {
   width: 50%;
   text-align: center;
+  padding-top: 14px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     width: 100%;
-    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  &--slim {
+  &--small {
     @media (min-width: $tablet-width) {
-      margin-top: -45px;
+      margin-top: -56px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: -52px;
+      margin-top: -66px;
     }
   }
 
-  &--pro {
+  &--big {
     @media (min-width: $tablet-width) {
-      margin-top: -73px;
+      margin-top: -82px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: -80px;
+      margin-top: -94px;
     }
   }
 }
@@ -117,9 +137,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 31px; //Потом убрать
+    padding-top: 162px;
     padding-right: 0;
-    padding-bottom: 21px;
+    padding-bottom: 16px;
 
 
     font-size: 20px;
@@ -131,8 +151,9 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    line-height: 21px;
+  @media (min-width: $desktop-width) {
+    line-height: 22px;
+    padding-bottom: 20px;
   }
 }
 
@@ -143,8 +164,10 @@
 }
 
 .product__description {
+  margin: 0;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 33px;
+    margin-bottom: 20px;
   }
 }
 
@@ -153,8 +176,8 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding-top: 7px;
-    padding-bottom: 9px;
+    padding-top: 5px;
+    padding-bottom: 7px;
     border-bottom: 1px solid #cdcdcd;
   }
 }

@@ -73,7 +73,7 @@
   @media (min-width: $desktop-width) {
     &--before {
       width: 750px;
-      left: -40px;
+      left: -27px; //-40
       padding-right: 40px;
       overflow: visible;
     }
