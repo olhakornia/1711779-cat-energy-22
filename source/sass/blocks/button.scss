@@ -61,6 +61,7 @@
   }
 
   &--catalog-main {
+    margin-top: 12px;
     font-size: 16px;
     line-height: 20px;
 
@@ -76,6 +77,7 @@
   &--catalog-secondary {
     color: $form-darkgrey1;
     background-color: $lightgrey;
+    margin: 0;
 
     &:hover {
       background-color: #ebebeb;
@@ -95,7 +97,7 @@
       width: 100%;
       grid-column: 1/-1;
       padding: 10px;
-      margin-top: 28px;
+      margin-top: 24px;
     }
 
     @media (min-width: $desktop-width) {

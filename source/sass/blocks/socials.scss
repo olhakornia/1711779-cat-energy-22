@@ -3,19 +3,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  padding: 20px 0;
+  align-items: flex-start;
+  padding: 18px 0;
   border-top: 1px solid $link-border-grey;
   border-bottom: 1px solid $link-border-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 0 0 25px;
     border: none;
   }
 }
 
 .socials__item {
-  margin: 0 15px;
+  margin: 0 18px;
+
+  @media (min-width: $tablet-width){
+    margin: 0 12px;
+    // align-self: flex-start;
+  }
 }
 
 .socials__link {
@@ -47,6 +52,7 @@
     &--fb {
       width: 28px;
       height: 33px;
+      margin-top: -5px;
     }
   }
 }

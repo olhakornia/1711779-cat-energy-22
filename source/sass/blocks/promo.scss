@@ -29,14 +29,14 @@
     background-size: cover;
     background-position: center;
 
-    @media (min-resolution: 2dppx) {
+    @media  (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/index-background-mobile@2x.png");
     }
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/index-background-desktop.png");
 
-      @media (min-resolution: 2dppx) {
+      @media  (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/index-background-desktop@2x.png");
       }
     }
