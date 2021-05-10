@@ -1,5 +1,5 @@
 .page-header {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-small) {
     position: absolute;
     width: 100%;
     z-index: 10;
@@ -46,7 +46,7 @@
   }
 
   &--hidden {
-    padding-right: 7px; //PP
+    padding-right: 7px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -58,7 +58,7 @@
   position: relative;
   display: block;
   padding: 0;
-  padding-top: 25px; //PP
+  padding-top: 25px;
   width: 24px;
   height: 18px;
   cursor: pointer;

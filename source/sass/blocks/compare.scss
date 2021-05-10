@@ -34,7 +34,6 @@
 
   @media (min-width: $desktop-width) {
     width: 650px;
-    margin-top: -20px;
   }
 }
 
@@ -79,8 +78,8 @@
     }
 
     &--after {
-      box-shadow: 400px 590px 0 400px #eaeaea;
-      background-image: linear-gradient(#ffffff 0, #ffffff 190px, #eaeaea 190px, #eaeaea 100%);
+      box-shadow: 400px 560px 0 400px #eaeaea;
+      background-image: linear-gradient(#ffffff 0, #ffffff 160px, #eaeaea 160px, #eaeaea 100%);
     }
   }
 
