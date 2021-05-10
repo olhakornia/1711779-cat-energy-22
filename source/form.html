@@ -60,7 +60,7 @@
           </div>
         </fieldset>
         <fieldset class="form__radio">
-          <legend class="visually-hidden">Цель</legend>
+          <legend class="visually-hidden">Ваша цель</legend>
           <div class="form__field form__field--radio">
             <input class="form__input" type="radio" name="aim" value="slim" id="slim" checked>
             <label class="form__label form__label--radio" for="slim">Похудение</label>
@@ -100,7 +100,8 @@
       </fieldset>
       <fieldset class="form__comment">
         <legend class="form__title">Комментарий</legend>
-        <textarea class="form__label form__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
+        <textarea class="form__label form__textarea" name="comment" id="comment">Расскажите обо всех повадках кота</textarea>
+        <label class="visually-hidden" for="comment">Введите комментарий</label>
       </fieldset>
       <fieldset class="form__checkbox">
         <legend class="form__title">Дополнительно</legend>
@@ -145,7 +146,7 @@
     </div>
     <div class="page-footer__color-wrap">
       <div class="page-footer__wrap">
-        <a class="page-footer__logo">
+        <a class="page-footer__logo" href="index.html">
           <img src="img/logo-title.svg" alt="Логотип Cat Energy" width="128" height="24">
         </a>
         <div class="page-footer__socials socials">
@@ -178,9 +179,12 @@
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <svg class="copyright__icon" width="27" height="34">
-            <use href="img/sprite.svg#htmlacademy"></use>
-          </svg>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Перейти на сайт Академии</span>
+            <svg class="copyright__icon" width="27" height="34">
+              <use href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>

@@ -129,7 +129,6 @@
 }
 
 .features__description {
-  // padding-left: 80px;
   margin: 0;
 
   vertical-align: middle;
@@ -138,7 +137,6 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    // padding: 151px 20px 57px 0;
     font-size: 16px;
     line-height: 24px;
   }

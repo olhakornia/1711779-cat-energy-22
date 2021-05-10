@@ -8,7 +8,7 @@
     padding-right: 70px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-small) {
     padding-top: 187px;
   }
 }
@@ -36,7 +36,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 62px; //66 - desktop
+    padding-bottom: 62px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -214,7 +214,7 @@
   font-size: 16px;
   line-height: 18px;
 
-  color: #444444; // Не загружается цвет
+  color: #444444;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {

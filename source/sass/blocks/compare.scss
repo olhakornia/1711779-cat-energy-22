@@ -13,7 +13,6 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 35px;
     margin: 0;
-    // background-image: linear-gradient(#ffffff 0, #ffffff 200px, $lightgrey 200px, $lightgrey 100%);
     background-image: linear-gradient($white 170px, $lightgrey 170px);
     overflow: visible;
   }
@@ -72,7 +71,7 @@
   @media (min-width: $desktop-width) {
     &--before {
       width: 750px;
-      left: -27px; //-40
+      left: -27px;
       padding-right: 40px;
       overflow: visible;
     }

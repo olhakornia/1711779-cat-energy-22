@@ -1,14 +1,18 @@
 .main-catalog {
   @include container;
   padding-top: 27px;
-  padding-bottom: 38px;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     padding-top: 36px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-small) {
+    padding-top: 187px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 187px;
     padding-bottom: 0;
   }
 }
