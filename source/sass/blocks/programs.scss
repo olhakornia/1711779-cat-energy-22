@@ -67,7 +67,7 @@
   }
 
   &--slim {
-    @media (min-width: $tablet-width) and (max-width:$tablet-width-only) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       padding-right: 280px;
     }
 
