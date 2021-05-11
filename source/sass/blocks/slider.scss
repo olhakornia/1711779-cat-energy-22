@@ -60,16 +60,16 @@
   width: 85px;
   height: 14px;
   border-radius: 6px;
-  background-color: #ffffff;
-  border: 1px solid #dcdcdc;
+  background-color: $white;
+  border: 1px solid $lightgrey5;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 2px 0;
     width: 428px;
     height: 6px;
-    background-color: #dcdcdc;
-    border-color: #dcdcdc;
+    background-color: $lightgrey5;
+    border-color: $lightgrey5;
   }
 }
 
@@ -87,7 +87,7 @@
     margin-left: calc(50% - 17px);
     width: 34px;
     height: 34px;
-    background-image: radial-gradient($green 0, $green 4px, #ffffff 5px, #ffffff 100%);
+    background-image: radial-gradient($green 0, $green 4px, $white 5px, $white 100%);
     border: 1px solid $border-grey;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);

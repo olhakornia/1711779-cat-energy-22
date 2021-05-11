@@ -100,7 +100,7 @@
 .form__label {
   font-size: 16px;
   line-height: 18px;
-  color: $form-darkgrey1;
+  color: $darkgrey2;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -125,7 +125,7 @@
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 46px;
-  color: $form-darkgrey2;
+  color: $darkgrey3;
 
   @media (min-width: $tablet-width) {
     padding-left: 60px;
@@ -152,7 +152,7 @@
 
   &:hover {
     &::before {
-      border: 1px solid #bababa;
+      border: 1px solid $lightgrey4;
     }
   }
 }
@@ -189,7 +189,7 @@
 
   &:hover {
     &::before {
-      border: 1px solid #bababa;
+      border: 1px solid $lightgrey4;
     }
   }
 }
@@ -206,7 +206,7 @@
   top: 50%;
   transform: translateY(-50%);
 
-  color: #222222;
+  color: $darkgrey3;
 }
 
 .form__input {
@@ -214,7 +214,7 @@
   font-size: 16px;
   line-height: 18px;
 
-  color: #444444;
+  color: $darkgrey2;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -237,7 +237,7 @@
     }
 
     &:focus {
-      border: 2px solid #444444;
+      border: 2px solid $darkgrey2;
 
       ~ .form__input-icon {
         color: $green;
@@ -245,10 +245,10 @@
     }
 
     &:focus:invalid {
-      border: 1px solid #ff8282;
+      border: 1px solid $red;
 
       ~ .form__input-icon {
-        color: #ff8282;
+        color: $red;
       }
     }
 
@@ -272,13 +272,13 @@
 
     &:focus ~ .form__label--checkbox {
       &::before {
-        border: 1px solid #444444;
+        border: 1px solid $darkgrey2;
       }
     }
 
     &:focus ~ .form__label--radio {
       &::before {
-        border: 1px solid #444444;
+        border: 1px solid $darkgrey2;
       }
     }
 
@@ -293,7 +293,7 @@
 }
 
 .form__input:checked ~ .form__label--radio::before {
-  background-color: #68b738;
+  background-color: $green;
   background-clip: content-box;
 }
 
@@ -371,7 +371,7 @@
     display: block;
     height: 1px;
     width: 100vw;
-    background-color: #d9d9d9;
+    background-color: $border-grey2;
     left: -20px;
 
     @media (min-width: $tablet-width) {
@@ -437,7 +437,7 @@
   outline: none;
 
   &:focus {
-    border: 2px solid #444444;
+    border: 2px solid $darkgrey2;
   }
 
   @media (min-width: $tablet-width) {

@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 -30px;
-    background-image: linear-gradient(#ffffff 0, #ffffff 180px, $lightgrey 180px, $lightgrey 100%);
+    background-image: linear-gradient($white 0, $white 180px, $lightgrey 180px, $lightgrey 100%);
     overflow: hidden;
   }
 
@@ -59,8 +59,8 @@
 
     &--after {
       align-items: flex-end;
-      box-shadow: 400px 570px 0 400px #eaeaea;
-      background-image: linear-gradient(#ffffff 0, #ffffff 170px, #eaeaea 170px, #eaeaea 100%);
+      box-shadow: 400px 570px 0 400px $darkgrey;
+      background-image: linear-gradient($white 0, $white 170px, $darkgrey 170px, $darkgrey 100%);
 
       img {
         z-index: 1;
@@ -77,8 +77,8 @@
     }
 
     &--after {
-      box-shadow: 400px 560px 0 400px #eaeaea;
-      background-image: linear-gradient(#ffffff 0, #ffffff 160px, #eaeaea 160px, #eaeaea 100%);
+      box-shadow: 400px 560px 0 400px $darkgrey;
+      background-image: linear-gradient($white 0, $white 160px, $darkgrey 160px, $darkgrey 100%);
     }
   }
 

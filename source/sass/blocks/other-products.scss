@@ -113,7 +113,7 @@
   @include text-reset;
   font-size: 16px;
   line-height: 1;
-  color: #222222;
+  color: $darkgrey3;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -145,7 +145,7 @@
   font-family: $text-font;
   font-size: $small;
   line-height: 1;
-  color: $form-darkgrey2;
+  color: $darkgrey3;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

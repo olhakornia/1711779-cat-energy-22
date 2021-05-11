@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="152x152" href="img/favicon-152x152.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Cat Energy</title>
 </head>
 <body class="page__body">
@@ -47,10 +49,10 @@
         <h1 class="promo__title"> Функциональное <br> питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
         <picture class="promo__image">
-          <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop.webp, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop.webp, img/index-can-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp, img/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/index-can-mobile.webp, img/index-can-mobile@2x.webp 2x"> -->
-          <source media="(min-width: 1366px)" srcset="img/index-can-desktop.png, img/index-can-desktop@2x.png 2x"> <!---->
+          <source type="image/webp" srcset="img/index-can-mobile.webp, img/index-can-mobile@2x.webp 2x">
+          <source media="(min-width: 1366px)" srcset="img/index-can-desktop.png, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet.png, img/index-can-tablet@2x.png 2x">
           <img src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм Cat Energy">
         </picture>
@@ -152,16 +154,16 @@
           <ul class="compare__pictures">
             <li class="compare__image compare__image--before">
               <picture>
-                <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/before-desktop.webp, img/before-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile.webp, img/before-mobile.webp 2x"> -->
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-desktop.webp, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile.webp, img/before-mobile.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/before-desktop.png, img/before-desktop@2x.png 2x">
                 <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Фотография Бориса ДО">
               </picture>
             </li>
             <li class="compare__image compare__image--after">
               <picture>
-                <!-- <source type="image/webp" media="(min-width: 768px)" srcset="img/after-desktop.webp, img/after-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile.webp, img/after-mobile@2x.webp 2x"> -->
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-desktop.webp, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile.webp, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/after-desktop.png, img/after-desktop@2x.png 2x">
                 <img src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Фотография Бориса ПОСЛЕ">
               </picture>
@@ -190,7 +192,7 @@
       style="border:0;"
       allowfullscreen=""
       loading="lazy"
-      aria-label="Карта с расположением Cat Energy"> <!-------------------------------------->
+      aria-label="Карта с расположением Cat Energy">
       </iframe>
     </div>
     <div class="page-footer__color-wrap">
@@ -229,7 +231,7 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Перейти на сайт Академии</span> <!----------------------->
+            <span class="visually-hidden">Перейти на сайт Академии</span>
             <svg class="copyright__icon" width="27" height="34">
               <use href="img/sprite.svg#htmlacademy"></use>
             </svg>
@@ -238,6 +240,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/page-header.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
