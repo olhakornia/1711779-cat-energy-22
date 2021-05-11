@@ -29,7 +29,7 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 48px 0;
+    padding: 0 0 50px 0;
     font-size: 16px;
     line-height: 24px;
   }
@@ -41,7 +41,7 @@
 
 .program__link-wrap {
   padding: 14px 0 0 0;
-  border-top: 1px solid $link-border-grey;
+  border-top: 1px solid $border-grey2;
 
   @media (min-width: $tablet-width) {
     padding: 0;

@@ -61,27 +61,14 @@
   }
 
   &--index {
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-small) {
       color: $white;
     }
   }
-
-  // &--index&--active {
-  //   @media (min-width: $desktop-width) {
-  //     &::before {
-  //       content: "";
-  //       position: absolute;
-  //       width: 100%;
-  //       bottom: -8px;
-  //       left: 0;
-  //       border-bottom: 2px solid $white;
-  //     }
-  //   }
-  // }
 }
 
 .main-nav__link--index.main-nav__link--active {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-small) {
     &::before {
       content: "";
       position: absolute;

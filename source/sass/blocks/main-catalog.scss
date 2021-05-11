@@ -1,13 +1,19 @@
 .main-catalog {
   @include container;
   padding-top: 27px;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 36px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-small) {
+    padding-top: 187px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 187px;
+    padding-bottom: 0;
   }
 }
 
@@ -21,8 +27,12 @@
   line-height: 1;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 120px; //Потом изменить
+    padding-bottom: 92px;
     font-size: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 95px;
   }
 
   &::after {
@@ -32,7 +42,7 @@
     width: 100vw;
     bottom: 0;
     left: -20px;
-    background-color: #ebebeb;
+    background-color: $lightgrey3;
 
     @media (min-width: $tablet-width) {
       content: none;
@@ -44,11 +54,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: start;
     column-gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
+    align-items: flex-start;
   }
 }

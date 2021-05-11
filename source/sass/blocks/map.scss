@@ -25,11 +25,11 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 95px;
-    left: 0;
+    top: 93px;
+    left: 29px;
     column-gap: 87px;
     width: 570px;
-    padding: 67px 76px 60px 76px;
+    padding: 66px 76px 56px 76px;
 
     z-index: 1;
     background: $white;
@@ -41,7 +41,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: $dark;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -54,7 +54,7 @@
   font-family: $text-font;
   font-size: $small;
   line-height: 20px;
-  color: $form-darkgrey1;
+  color: $darkgrey2;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

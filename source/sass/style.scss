@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
 @import "../../node_modules/normalize.css/normalize.css";
+@import "fonts.scss";
 @import "global.scss";
 @import "variables.scss";
 @import "mixin.scss";
@@ -23,7 +23,6 @@
 @import "blocks/page-main.scss";
 @import "blocks/form.scss";
 @import "blocks/main-catalog.scss";
-@import "blocks/fieldset.scss";
 @import "blocks/product.scss";
 @import "blocks/other-products.scss";
 @import "blocks/visually-hidden.scss";

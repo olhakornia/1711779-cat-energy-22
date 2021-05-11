@@ -3,7 +3,6 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 25px;
     border-bottom: 1px solid $border-grey;
   }
 
@@ -14,7 +13,7 @@
 }
 
 .features__title {
-  padding-bottom: 38px;
+  padding-bottom: 36px;
   margin: 0;
 
   font-size: 36px;
@@ -60,6 +59,10 @@
   background-size: 60px 60px;
 
   counter-increment: counter;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 
   &::before {
     content: "";
@@ -126,7 +129,6 @@
 }
 
 .features__description {
-  // padding-left: 80px;
   margin: 0;
 
   vertical-align: middle;
@@ -135,7 +137,6 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    // padding: 151px 20px 57px 0;
     font-size: 16px;
     line-height: 24px;
   }

@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="152x152" href="img/favicon-152x152.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Cat Energy</title>
 </head>
 <body class="page__body">
@@ -21,7 +24,7 @@
           </picture>
         </a>
         <a class="page-header__logo page-header__logo--hidden">
-          <img src="img/logo-title.svg" alt="Логотип Cat Energy">
+          <img src="img/logo-title.svg" alt="Логотип Cat Energy" width="101" height="18">
         </a>
         <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -46,7 +49,10 @@
         <h1 class="promo__title"> Функциональное <br> питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
         <picture class="promo__image">
-          <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png, img/index-can-desktop@2x.png 2x">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop.webp, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile.webp, img/index-can-mobile@2x.webp 2x">
+          <source media="(min-width: 1366px)" srcset="img/index-can-desktop.png, img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/index-can-tablet.png, img/index-can-tablet@2x.png 2x">
           <img src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x" alt="Корм Cat Energy">
         </picture>
@@ -148,12 +154,16 @@
           <ul class="compare__pictures">
             <li class="compare__image compare__image--before">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-desktop.webp, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile.webp, img/before-mobile.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/before-desktop.png, img/before-desktop@2x.png 2x">
                 <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Фотография Бориса ДО">
               </picture>
             </li>
             <li class="compare__image compare__image--after">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-desktop.webp, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile.webp, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/after-desktop.png, img/after-desktop@2x.png 2x">
                 <img src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Фотография Бориса ПОСЛЕ">
               </picture>
@@ -175,13 +185,14 @@
       <div class="map__box">
         <div class="map__box-adress">
           <p class="map__text">Приглашаем<br>к сотрудничеству<br>дилеров!</p>
-          <p class="map__adress">ул. Большая<br>Конюшенная, д 19/8<br><span class="map__adress-city">Санкт-Петербург</p>
+          <p class="map__adress">ул. Большая<br>Конюшенная, д 19/8<br><span class="map__adress-city">Санкт-Петербург</span></p>
         </div>
       </div>
       <iframe class="map__image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598128009637!2d30.320932916070532!3d59.93881038187621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjciTiAzMMKwMTknMjMuMiJF!5e0!3m2!1sru!2sua!4v1619198311961!5m2!1sru!2sua"
       style="border:0;"
       allowfullscreen=""
-      loading="lazy">
+      loading="lazy"
+      aria-label="Карта с расположением Cat Energy">
       </iframe>
     </div>
     <div class="page-footer__color-wrap">
@@ -219,13 +230,16 @@
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <svg class="copyright__icon" width="27" height="34">
-            <use href="img/sprite.svg#htmlacademy"></use>
-          </svg>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Перейти на сайт Академии</span>
+            <svg class="copyright__icon" width="27" height="34">
+              <use href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
   </footer>
-  <script src="js/page-header.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

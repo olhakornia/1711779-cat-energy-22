@@ -1,16 +1,16 @@
 .programs {
   @include container;
-  padding-bottom: 27px;
+  padding-bottom: 7px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 45px;
+    padding-bottom: 18px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    padding-bottom: 71px;
+    padding-bottom: 42px;
   }
 }
 
@@ -18,12 +18,14 @@
   position: relative;
   width: 100%;
   padding: 30px 20px 18px 20px;
+  margin-bottom: 20px;
 
   background-color: $lightgrey;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 314px 60px 53px;
+    padding: 72px 314px 60px 53px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,7 +46,7 @@
     @media (min-width: $tablet-width) {
       width: 200px;
       height: 200px;
-      top: 92px;
+      top: 86px;
       right: 62px;
       left: auto;
     }
@@ -65,16 +67,8 @@
   }
 
   &--slim {
-    margin-bottom: 20px;
-
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       padding-right: 280px;
-      margin-bottom: 30px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-right: 52px;
-      margin-bottom: 0;
     }
 
     &::after {
@@ -88,7 +82,7 @@
       @media (min-width: $tablet-width) {
         width: 140px;
         height: 192px;
-        top: 81px;
+        top: 75px;
         right: 92px;
         left: auto;
         background-size: 140px 192px;

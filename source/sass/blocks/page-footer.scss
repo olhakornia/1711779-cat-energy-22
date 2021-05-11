@@ -26,11 +26,15 @@
     padding-top: 55px;
     padding-bottom: 61px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+  }
 }
 
 .page-footer__logo {
   display: block;
-  padding: 0 0 32px 0;
+  padding: 0 0 24px 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
