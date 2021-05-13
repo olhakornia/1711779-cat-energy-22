@@ -110,7 +110,8 @@
 }
 
 .product__title {
-  @include text-reset;
+  @include a-reset;
+  display: block;
   padding-right: 64px;
   padding-bottom: 18px;
 
@@ -124,6 +125,7 @@
     padding-right: 0;
     padding-bottom: 8px;
     color: $dark;
+    margin: 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -180,6 +182,7 @@
 }
 
 .product__text {
+  max-width: 75%;
   margin: 0;
   font-family: $text-font;
   font-size: 12px;
@@ -188,6 +191,11 @@
 
   &--more {
     padding-bottom: 21px;
+    max-width: 100%;
+  }
+
+  &--value {
+    flex-shrink: 0;
   }
 
   @media (min-width: $tablet-width) {

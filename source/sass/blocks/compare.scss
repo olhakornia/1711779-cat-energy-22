@@ -32,7 +32,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 650px;
+    margin: -20px -5px 0 0;
+    width: 642px;
   }
 }
 
@@ -44,6 +45,14 @@
   width: 100%;
   overflow: hidden;
   transition: width 0.4s ease-out;
+
+  &--before {
+    img {
+      display: block;
+      width: 312px;
+      height: 233px;
+    }
+  }
 
   &--after {
     display: flex;
@@ -63,31 +72,43 @@
       background-image: linear-gradient($white 0, $white 170px, $darkgrey 170px, $darkgrey 100%);
 
       img {
+        width: 500px;
         z-index: 1;
       }
+    }
+
+    img {
+      width: 650px;
+      height: 517px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--before {
       width: 750px;
-      left: -27px;
-      padding-right: 40px;
+      left: -37px;
+      padding-right: 27px;
       overflow: visible;
     }
 
     &--after {
-      box-shadow: 400px 560px 0 400px $darkgrey;
-      background-image: linear-gradient($white 0, $white 160px, $darkgrey 160px, $darkgrey 100%);
+      box-shadow: 400px 590px 0 400px $darkgrey;
+      background-image: linear-gradient($white 0, $white 190px, $darkgrey 190px, $darkgrey 100%);
+
+      img {
+        width: 586px;
+        padding-right: 56px;
+      }
     }
   }
+}
 
-  img {
-    max-width: inherit;
+.compare__before:focus ~ .slider__label--before {
+  border: 1px dotted $darkgrey2;
+  color: $green;
+}
 
-    @media (min-width: $tablet-width) {
-      width: 650px;
-      height: 517px;
-    }
-  }
+.compare__after:focus ~ .slider__label--after {
+  border: 1px dotted $darkgrey2;
+  color: $green;
 }

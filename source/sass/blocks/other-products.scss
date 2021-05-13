@@ -68,11 +68,12 @@
   @include ul-reset;
 
   @media (min-width: $tablet-width) {
-    margin-top: 44px;
+    margin-top: 40px;
     border: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 45px;
     border: none;
   }
 }
@@ -119,6 +120,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 300px;
+  }
 }
 
 .other-products__description {
@@ -153,6 +158,7 @@
 
     &--value {
       margin-left: 50px;
+      flex-shrink: 0;
     }
   }
 }
@@ -190,6 +196,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: center;
     margin-top: 40px;
     margin-bottom: 0;
     padding: 56px 40px 40px 40px;

@@ -1,5 +1,5 @@
-$main-font: "Oswald", arial, sans-serif;
-$text-font: arial, helvetica, sans-serif;
+$text-font: "Arial", "Helvetica", sans-serif;
+$main-font: "Oswald", $text-font;
 $small: 14px;
 
 $green: #68b738;

@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 36px;
-    padding-bottom: 58px;
+    padding-bottom: 62px;
   }
 
   @media (min-width: $desktop-small) {
@@ -51,6 +51,8 @@
 }
 
 .main-catalog__wrap {
+  @include ul-reset;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
